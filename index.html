@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brewing the Perfect Cup | Coffee Journey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header" id="top">
+    <nav class="main-nav" aria-label="Primary">
+        <a href="#top" class="logo">Brewed Awakening</a>
+        <ul class="nav-list" id="nav-list">
+            <li><a href="#beans">Beans</a></li>
+            <li><a href="#black-coffee">Brew</a></li>
+            <li><a href="#mocha">Mocha</a></li>
+            <li><a href="#latte">Latte Art</a></li>
+        </ul>
+    </nav>
+
+<section class="hero" aria-labelledby="hero-title">
+    <div class="hero-content">
+        <h1 id="hero-title" class="hero-title hero-title-animated">
+            Brewing the Perfect Cup
+        </h1>
+        <p>Scroll through the full journey from roasted bean to silky latte art.</p>
+        <a href="#beans" class="btn btn-primary">Start the journey</a>
+        <span class="scroll-hint" aria-hidden="true">
+            Scroll to explore
+        </span>
+    </div>
+</section>
+
+
+        <figure class="hero-image">
+            <img src="images/headimage.jpg"
+                 alt="A pile of roasted coffee beans on a dark background.">
+        </figure>
+    </section>
+</header>
+
+<main id="main">
+    <!-- Section 1: Beans -->
+    <section id="beans" class="panel panel--beans">
+        <div class="panel-content">
+            <div class="panel-text">
+                <h2>Step 1 · Roasted Beans</h2>
+                <p>
+                    Every cup starts here. Freshly roasted beans carry aromas of cocoa,
+                    caramel, and toasted nuts. Time and temperature determine whether
+                    your coffee is bright and fruity or deep and chocolatey.
+                </p>
+                <p>
+                    As you scroll, the background slowly shifts from dark to warm tones,
+                    echoing the roasting process.
+                </p>
+            </div>
+            <figure class="panel-image panel-image--beans">
+                <img src="images/background.jpg"
+                     alt="Close-up of coffee beans scattered across a dark surface.">
+            </figure>
+        </div>
+    </section>
+
+    <!-- Section 2: Black Coffee -->
+    <section id="black-coffee" class="panel panel--black">
+        <div class="panel-content">
+            <div class="panel-text">
+                <h2>Step 2 · The First Pour</h2>
+                <p>
+                    Hot water extracts flavour and oils from the grounds, creating a bold
+                    cup of black coffee. Acidity, sweetness, and bitterness all balance
+                    in this simple brew.
+                </p>
+                <p>
+                    Hover over the cup to see it lift gently, as if being served to you.
+                </p>
+            </div>
+            <figure class="panel-image coffee-card coffee-card--black">
+                <img src="images/coffee.jpg"
+                     alt="A white cup of black coffee on a saucer with a spoon.">
+            </figure>
+        </div>
+    </section>
+
+    <!-- Section 3: Mocha -->
+    <section id="mocha" class="panel panel--mocha">
+        <div class="panel-content">
+            <div class="panel-text">
+                <h2>Step 3 · Chocolate Mocha</h2>
+                <p>
+                    Add rich cocoa, a touch of milk, and a smooth espresso shot to build
+                    a comforting mocha. The flavours layer like the patterns in the foam.
+                </p>
+                <p>
+                    Steam rises from the cup using soft looping animations.
+                </p>
+            </div>
+            <figure class="panel-image coffee-card coffee-card--mocha">
+                <img src="images/mocha.jpeg"
+                     alt="A mocha coffee with leaf-shaped latte art.">
+            </figure>
+        </div>
+    </section>
+
+    <!-- Section 4: Latte Art -->
+    <section id="latte" class="panel panel--latte">
+        <div class="panel-content">
+            <div class="panel-text">
+                <h2>Step 4 · Latte Art Finale</h2>
+                <p>
+                    Finally, perfectly textured milk meets espresso. Precise pours form
+                    layered petals of latte art – the signature of a practiced barista.
+                </p>
+                <p>
+                    The latte gently pulses, highlighting the art without being distracting.
+                </p>
+            </div>
+            <figure class="panel-image coffee-card coffee-card--latte">
+                <img src="images/cafe-latte.jpg"
+                     alt="A latte in a glass cup with layered tulip latte art.">
+            </figure>
+        </div>
+    </section>
+
+    <!-- CTA / contact-style section -->
+    <section class="panel panel--cta" aria-labelledby="cta-title">
+        <div class="panel-content panel-content--center">
+            <div class="panel-text">
+                <h2 id="cta-title">Choose Your Daily Brew</h2>
+                <p>
+                    Which step of the journey are you in the mood for today?
+                    Select a style and imagine your perfect cup.
+                </p>
+
+                <form class="coffee-form" aria-label="Select your coffee style">
+                    <label for="coffee-style">Coffee mood</label>
+                    <select id="coffee-style" name="coffee-style">
+                        <option value="beans">Curious about beans</option>
+                        <option value="black">Strong and bold</option>
+                        <option value="mocha">Sweet and cozy</option>
+                        <option value="latte">Smooth and creamy</option>
+                    </select>
+
+                    <button type="submit" class="btn btn-submit">
+                        Send my order
+                    </button>
+
+                    <p class="form-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; <span id="year"></span> Warren Chanansingh HTTP 5121 Final HTML & CSS Project.</p>
+    <a href="#top" class="back-to-top">Back to top</a>
+</footer>
+
+</body>
+</html>
